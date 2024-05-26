@@ -7,6 +7,8 @@ import { Nav } from './components/Nav'
 function App() {
 
   return (
+    <cartProvider>
+
     <BrowserRouter>
     <Nav/>
       <Routes>
@@ -14,6 +16,7 @@ function App() {
         <Route path='/cart' element={<Cart/>}/>
       </Routes>
     </BrowserRouter>
+    </cartProvider>
   )
 }
 
